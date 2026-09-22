@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>For My BeautifulSpuspuu 💗</title>
+
+  <!-- Cute cursive fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      overflow: hidden;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background:
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,.35), transparent 25%),
+        radial-gradient(circle at 80% 70%, rgba(255,180,200,.25), transparent 30%),
+        linear-gradient(135deg, #ffdce5, #f8c9d4, #ffe5eb);
+
+      font-family: "Poppins", sans-serif;
+    }
+
+    /* Main card */
+    .card {
+      position: relative;
+      width: min(90%, 850px);
+      min-height: 500px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      padding: 50px 25px;
+
+      background: rgba(255, 245, 248, 0.28);
+      border: 1px solid rgba(255,255,255,.45);
+      border-radius: 30px;
+
+      box-shadow:
+        0 20px 60px rgba(150, 60, 90, .15),
+        inset 0 0 30px rgba(255,255,255,.2);
+
+      backdrop-filter: blur(8px);
+
+      animation: appear 1.5s ease;
+    }
+
+    /* Small top text */
+    .small-text {
+      color: #c62f62;
+      font-size: 16px;
+      letter-spacing: 2px;
+      margin-bottom: 25px;
+      opacity: .85;
+    }
+
+    /* Main message */
+    .message {
+      color: #c72559;
+      font-family: "Pacifico", cursive;
+      font-size: clamp(35px, 6vw, 70px);
+      font-weight: normal;
+      text-align: center;
+      line-height: 1.35;
+
+      text-shadow: 2px 3px 8px rgba(150, 30, 70, .12);
+
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .heart {
+      display: inline-block;
+      color: #e9346c;
+      animation: heartbeat 1.5s infinite;
+    }
+
+    /* Cute subtitle */
+    .subtitle {
+      margin-top: 25px;
+      color: #a82c54;
+      font-size: 17px;
+      text-align: center;
+      max-width: 600px;
+      line-height: 1.7;
+    }
+
+    /* Button */
+    .love-button {
+      margin-top: 30px;
+      padding: 13px 30px;
+
+      border: none;
+      border-radius: 50px;
+
+      background: #d93668;
+      color: white;
+
+      font-family: "Poppins", sans-serif;
+      font-size: 15px;
+      cursor: pointer;
+
+      box-shadow: 0 8px 20px rgba(180, 30, 80, .25);
+
+      transition: .3s ease;
+    }
+
+    .love-button:hover {
+      transform: translateY(-4px) scale(1.04);
+      background: #c9285b;
+      box-shadow: 0 12px 25px rgba(180, 30, 80, .3);
+    }
+
+    /* Floating hearts */
+    .floating-heart {
+      position: absolute;
+      bottom: -30px;
+
+      color: rgba(210, 35, 90, .45);
+      font-size: 25px;
+
+      pointer-events: none;
+
+      animation: rise linear forwards;
+    }
+
+    @keyframes rise {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+      }
+
+      10% {
+        opacity: 1;
+      }
+
+      100% {
+        transform: translateY(-110vh) rotate(25deg);
+        opacity: 0;
+      }
+    }
+
+    @keyframes heartbeat {
+      0%, 100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.2);
+      }
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-7px);
+      }
+    }
+
+    @keyframes appear {
+      from {
+        opacity: 0;
+        transform: scale(.9);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+      .card {
+        min-height: 90vh;
+        border-radius: 20px;
+      }
+
+      .small-text {
+        font-size: 13px;
+      }
+
+      .subtitle {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <div class="small-text">
+      A little surprise for you 💕
+    </div>
+
+    <h1 class="message">
+      Welcome my spuspuu
+      <span class="heart">♥</span>
+      <br>
+      Enjoy your stay
+    </h1>
+
+    <p class="subtitle">
+      I just want you to know how grateful I am to have you in my life.
+      You make ordinary days feel special just by being there.
+      Your smile, your laugh, and even the little things you do
+      mean more to me than I can put into words.
+       
+      I may not always know the perfect thing to say,
+      but I hope you never doubt how much you mean to me.
+      I want to be there for you through the good days,
+      the difficult days, and all the little moments in between.
+
+      Thank you for being you.
+      Thank you for making my heart feel at home.
+      If I could choose someone to share countless memories with,
+      I would choose you again and again.
+      <br>
+      I hope it makes you smile. 💗
+    </p>
+
+    <button class="love-button" onclick="showLove()">
+      Click me 💌
+    </button>
+
+  </div>
+
+  <script>
+    function showLove() {
+      alert("I love you so much! 💗");
+    }
+
+    // Create floating hearts
+    function createHeart() {
+      const heart = document.createElement("div");
+
+      heart.className = "floating-heart";
+      heart.innerHTML = ["♥", "♡", "💕", "💗"][Math.floor(Math.random() * 4)];
+
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.fontSize = (15 + Math.random() * 25) + "px";
+      heart.style.animationDuration = (5 + Math.random() * 5) + "s";
+
+      document.body.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 10000);
+    }
+
+    setInterval(createHeart, 700);
+  </script>
+
+</body>
+</html>
